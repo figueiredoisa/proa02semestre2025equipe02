@@ -1,0 +1,20 @@
+body {background-color: rgb(230, 173, 225);}
+h1 {color: rgb(155, 18, 167);
+    text-align: center;}
+p {font-family: verdana;
+  font-size: 20px;}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #4793d1;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #b479cc;}
+  /*isto é um comentario*/
