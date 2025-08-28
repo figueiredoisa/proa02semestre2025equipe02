@@ -1,20 +1,82 @@
-body {background-color: rgb(230, 173, 225);}
-h1 {color: rgb(155, 18, 167);
-    text-align: center;}
-p {font-family: verdana;
-  font-size: 20px;}
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
+/* Estilos Globais*/
+body {
+    background-color: rgb(230, 173, 225);
+    margin: 0;
+    padding: 0;
+    font-family: 'Verdana', sans-serif;
+    line-height: 1.6;
 }
 
-td, th {
-  border: 1px solid #4793d1;
-  text-align: left;
-  padding: 8px;
+/* Cabeçalhos*/
+h1 {
+    color: rgb(155, 18, 167);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*Parágrafos*/
+p {
+    font-size: 1.2rem; /* melhor para responsividade */
+    color: #040123;
+    margin-bottom: 15px;
+}
+
+/* Listas*/
+li {
+    font-size: 1rem;
+    color: #040123;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* Tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #4793d1;
+    padding: 8px;
+    text-align: left;
+    transition: background-color 0.3s ease; /* efeito suave ao hover */
 }
 
 tr:nth-child(even) {
-  background-color: #b479cc;}
-  /*isto é um comentario*/
+    background-color: #b479cc;
+}
+
+tr:hover {
+    background-color: #d6a2e0; /* efeito hover mais claro */
+}
+
+/* Imagens*/
+img {
+    height: auto; /* altura automática para manter proporção */
+    max-height: 200px; /* limite máximo de altura */
+    width: auto;
+    max-width: 100%; /* responsivo */
+    display: block;
+    margin: 10px 0;
+    border-radius: 8px; /* cantos levemente arredondados */
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05); /* leve zoom ao passar o mouse */
+}
+
+/* Links*/
+a {
+    color: rgb(155, 18, 167);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #b479cc;
+    text-decoration: underline;
+}
